@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=lobster"rel="stylesheet"type="text/css">
+<style>
+[type='radio']{
+margin:20px 0px 20px 0px;
+}
+[type='checkbox']{
+margin:20px 0px 20px 0px;
+}
+#ol{
+background-color: rgba(255,0,0,0.3);
+position: relative;
+top: 10px;
+}
+#navbar{
+background-color: navy;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+width: 100%;
+z-index:2;
+}
+nav ul{
+margin: 0px;
+padding: 10px;
+}
+nav li{
+margin: 0px;
+display:inline;
+}
+#main{
+position: relative;
+top: 130px;
+}
+a:hover{
+color: red;
+}
+.card{
+width: 550px;
+margin: 50px;
+padding: auto;
+border-radius: 5px;
+border: 15px solid #F0F;
+font-size: 35px;
+text-align: justify;
+opacity: 0.6;
+font-style: italic;
+line-height: 55px;
+}
+.cardC{
+padding: 10px;
+}
+.cardT{
+margin-bottom: 30px;
+}
+#cardshadow{
+box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+}
+
+:root{
+--07:gray;
+}
+.survey{
+background-color:green;
+background-color:var(--07);
+}
+
+:root{
+--09:white;
+}
+.survey2{
+background-color:silver;
+}
+
+body{
+background-color:white;
+color:black;
+font-family:arial;
+}
+
+h1{
+font-color:red;
+font-family:lobster,monospace;
+font-size: 50px;
+}
+#box{
+margin: 50px;
+width: 200px;
+height: 200px;
+border-radius: 10%;
+}
+.box1{
+background-color: yellow;
+text-align: justify;
+padding: 30px;
+height: 300px;
+width: 300px;
+} 
+.box2{
+background-color: blue;
+text-align: center;
+padding: 30px;
+height: 150px;
+width: 150px;
+}
+.box3{
+background-color: red;
+}
+.box4{
+background-color: green;
+}
+.box5{
+background-color: purple;
+}
+h4{
+color: yellow;}
+</style>
+<body>
+<header>
+<nav id="navbar">
+<h1 style="color:red;">HI! Welcome to my survey form</h1>
+</nav>
+</header>
+<main id="main">  
+<div>               
+<p style="font-size:20px;
+           font-family:monospace;">I'm Adenike and thank you for checking this out.This is a survey form and we just want to know what your preferences are, when  about food, movies, music...just life generally.</p>
+</div>
+<br>
+<h2 style="color:white;
+           font-weight: bold;">MUSIC</h2>
+<div class="survey">
+<p>What <ul>genre</ul> of music would you rather listen to all day?</p>
+<form>
+<label for="Hip-Hop"><input id="Hip-Hop"type="radio"name="Hip-Hop-Pop-Jazz-RnB-Gospel-Country">Hip-Hop</label>
+<br>
+<label for="Pop"><input id="Pop"type="radio"name="Hip-Hop-Pop-Jazz-RnB-Gospel-Country">Pop</label>
+<br>
+<label for="Jazz"><input id="Jazz"type="radio"name="Hip-Hop-Pop-Jazz-RnB-Gospel-Country">Jazz</label>
+<br>
+<label for="RnB"><input id="RnB"type="radio"name="Hip-Hop-Pop-Jazz-RnB-Gospel-Country">RnB</label>
+<br>
+<label for="Gospel"><input id="Gospel"type="radio"name="Hip-Hop-Pop-Jazz-RnB-Gospel-Country">Gospel</label>
+<br>
+<label for="Country"><input id="Country"type="radio"name="Hip-Hop-Pop-Jazz-RnB-Gospel-Country">Country</label>
+<br>
+<!--Below is group one-->
+<div style="color:#FF0000;">
+<p>Your preference isn't listed above? Not to worry, tell us what it is in the box below</p>
+<input type="text">
+</form>
+</div>
+<br>
+<div>
+<p>Which of these <strong> male </strong> artist(s) is your favourite. </p>
+<form>
+<label for ="Wizkid"><input id="Wizkid"type="checkbox"name="artists">Wizkid</label>
+<br>
+<label for="Davido"><input id="Davido"type="checkbox"name="artists">Davido</label>
+<br>
+<label for="Burnaboy"><input id="Burnaboy"type="checkbox"name="artists">Burnaboy</label>
+<br>
+<label for="Johnny Drille"><input id="Johnny Drille"type="checkbox"name="artists">Johnny Drille</label>
+<br>
+<label for="2face"><input id="2face"type="checkbox"name="artists">2face</label>
+<br>
+<label for="Adekunle Gold"><input id="Adekunle Gold"type="checkbox"name="artists">Adekunle Gold</label>
+<br>
+<!--Below is group two-->
+<div style="color:yellow">
+<p>Your preference(s) isn't listed above? You can tell us who in the box below</p>
+<input type="text">
+</div>
+</form>
+</div>
+<br>
+<p>Tell us who your favourite <strong> female </strong> artist is/are.</p>
+<form>
+<label for="Tiwa Savage"><input id="Tiwa Savage"type="checkbox"name="artists">Tiwa Savage</label>
+<br>
+<label for="Simi"><input id="Simi"type="checkbox"name="artists">Simi</label>
+<br>
+<label for="Asa"><input id="Asa"type="checkbox"name="artists">Asa</label>
+<br>
+<label for="Yemi Alade"><input id="Yemi Alade"type="checkbox"name="artists">Yemi Alade</label>
+<br>
+<label for="Waje"><input id="Waje"type="checkbox"name="artists">Waje</label>
+<br>
+<!--Below is group three-->
+<div style="color:blue";>
+<p>Your preference(s) isn't listed above? You can tell us who in the box below</p>
+<input type="text">
+</div>
+</form>
+<br>
+<h3 style="font-weight: bold;
+           color: white;">FOOD</h3>
+<!--Below is group Four-->
+<div class="survey2"
+     style="font-family:serif;
+            font-size:20px;
+            color:black;">
+<p>Tell us about your food choices.</p>
+<form>
+<label for="Pizza"><input id="Pizza"type="radio"name="pizza-shawarma">Pizza</label>  <label for="Shawarma"><input id="Shawarma"type="radio"name="pizza-shawarma">Shawarma</label>
+<br>
+<label for="Coke"><input id="Coke"type="radio"name="Coke-Fanta">Coke</label> <label for="Fanta"><input id="Fanta"type="radio"name="Coke-Fanta">Fanta</label>
+<br>
+<label for="Yogurt"><input id="Yogurt"type="radio"name="Yogurt-Ice cream">Yogurt</label> <label for ="Ice cream"><input id="Ice cream"type="radio"name="Yogurt-Ice cream">Ice cream</label>
+<br>
+<label for="Jollof rice"><input id="Jollof rice"type="radio"name="Jollof rice-Fried rice">Jollof rice</label> <label for="Fried Rice"><input id="Fried rice"type="radio"name="Jollof rice-Fried rice">Fried rice</label>
+<br>
+<label for="Chicken"><input id="chicken"type="radio"name="Chicken-Turkey">Chicken</label> <label for="Turkey"><input id="Turkey"type="radio"name="Chicken-Turkey">Turkey</label>
+</form>
+</div>
+<br>
+<p> How about you tell us about yourself below. </p>
+<form>
+<div>
+<label for ="Full name">Full name</label>
+<br> 
+<input id="full name"type="text"required name="name" placeholder="Enter your Full name">
+
+</div>
+<br>
+<div>
+<label for="Email">Email-address</label><br>
+<input id="Email"type="email"required name="Email-address"placeholder="Enter your email address">
+
+</div>
+<br>
+<div>
+<label for="tel-number">Phone number</label><br>
+<input id="tel- number"type="number"required name="mobile- number"placeholder="Enter your mobile number">
+
+</div>
+<br>
+<div>
+<label for="country">Country</label><br>
+<input id="country"type="text"required name="country"placeholder="Enter your country">
+
+</div>
+<br>
+
+<p style="Color:rgb(0,0,255);">Select your gender</p>
+<!--Below is group five-->
+<div style="font-family:monospace;
+            font-size:20px;">
+<label for="Female">
+<input id="Female"type="radio"required name="female-male-other">Female</label>
+<br>
+<label for="Male">
+<input id="Male"type="radio"required name="female-male-other">Male</label>
+<br>
+<label for="Other">
+<input id="Other"type="radio"required name="female-male-other">Other</label>
+<br>
+<button>submit</button>
+</div>
+<p>Thank you for joining us, this is officially one of the best decisions you have ever made. You can check us out on <a href="https://www.youtube.com">YouTube</a>. Also follow us on <a href="https://www.linkedin.com/in/adenike-adeyemi-554646189">LinkedIn</a>.
+<br>
+<h4 style="text-align: center;
+           font-size: 35px;
+text-transform: uppercase;"> Applied Visual Designing </h4>
+<p>Just trying out what I learnt in applied visual designing.I hope it makes sense at the end. </p>
+<div class="box1">
+<p style="color: black;">How to create a box. NB.padding sort of increases the width of a box. or maybe not....lol. </p>
+<div class="box2"
+     style="margin: 40px;">
+<p style="color: black;"> Intentionally didn't add closing div tag to the first box. </p></div>
+</div>
+<div class="box3" id="box">
+<p> This is box 3. u'll notice the text started from d top edge. why? becus I did not include padding</p>
+</div>
+<div class="box4" id="box"
+     style="color: black;
+            padding: 25px;">
+<p> Okay. This makes sense so far. Hopefully,it stays that way.</p></div>
+<div class="box5" id="box"></div>
+<p>Box 4 is a lil bigger than box 3 and box 5 because of <strong> padding </strong> </p>
+<br>
+<p style="font-weight: bold;
+          text-decoration: underline;
+      font-family: monospace;
+font-size: 30px;"> List of Korean series I have seen and yet to see</p>
+<div id="ol">
+<ol>
+<li> Vincenzo </li>
+<li> Crash landing on you</li>
+<li> It's okay not to be okay</li>
+<li> Mouse</li>
+<li> Alice</li>
+<li> Flower of evil</li>
+<li> Backstreet rookie</li>
+<li> Sweet romance</li>
+<li> Penthouse </li>
+</ol>
+</div>
+
+<!--<div class="card" id="cardshadow">-->
+<!--<div class="cardC">-->
+<div class="cardT">
+<p> Amazing Grace,how sweet that sound that saved a wretch like me. Oh oh oh, I was once lost but now I'm found, once blind but now I see. I can see it nowww, I can see the love in your eyes, laying yourself downnn, raising up the broken to life</p>
+</div>
+
+</main>
+
+</body>
+
+</html>
